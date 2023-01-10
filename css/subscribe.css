@@ -1,0 +1,73 @@
+.sign-mail {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.sign-mail form label {
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-right: 5px;
+}
+
+.sign-mail form input {
+    height: 42px;
+    width: 240px;
+    padding: 0 8px;
+    border: 1px solid #989fb0;
+    background: none;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-size: 17px;
+    color: #3b3b3b;
+}
+
+.sign-mail form .divSub input[placeholder] {
+    height: 42px;
+    width: 450px;
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+}
+
+.sign-mail form .divSub input[type='submit'] {
+    color: #FFF;
+    width: 213px;
+    background-color: #6ad048;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.sign-mail form .divName input {
+    margin: 10px 20px 10px 0;
+}
+
+.sign-mail form .divName {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.sign-mail form .divSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-mail .fa-envelope {
+    position: absolute;
+    color: #989fb0;
+    font-size: 220px;
+    z-index: -1;
+    top: 19px;
+    left: 4px;
+    opacity: 0.3;
+    transform: rotate(-30deg);
+}
+
+
+@media only screen and (max-width: 405px) {
+    .sign-mail form .divName label {
+        display: block;
+    }
+}

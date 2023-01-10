@@ -1,0 +1,79 @@
+.footer {
+    background-color: #1e1e1e;
+    color: #7c7c7d;
+}
+
+.footer>p {
+    font-size: 12px;
+}
+
+.footer .inside {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.footer .inside .sponsor .brands {
+    width: 80px;
+    height: 80px;
+}
+
+.footer .inside .sponsor .images {
+    display: flex;
+}
+
+.footer .inside .end {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container>div {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 10px;
+    width: 260px;
+}
+
+
+
+#icons {
+    margin: 0 25px 0 25px
+}
+
+.footer a {
+    text-decoration: none;
+    text-align: left;
+    color: #7c7c7d;
+}
+
+.footer a:hover {
+    color: #6ad048;
+}
+
+.footer .inside .end>div {
+    height: 40px;
+    margin: auto;
+}
+
+.footer .inside .end a {
+    padding: 0px 10px 0 10px;
+}
+
+.footer hr {
+    margin: 25px 0;
+}
+
+.footer .inside .end a {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #b5b5be;
+}
+
+._2title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #b5b5be;
+}

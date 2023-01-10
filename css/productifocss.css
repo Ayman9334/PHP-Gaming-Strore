@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+}
+.CARD img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+    max-width: 130px;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+}
+.product-price span{
+    font-weight: 600;
+}
+.last-price{
+    color: #484848;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+.new-price{
+    color: #6ad048;
+    font-size: 2rem;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #15161D;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info .btn{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Discount2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    margin-left: 8px;
+    color: #FFF;
+    background-color: #6ad048;
+    height: 25px;
+}
+
+@media (min-width: 700px){
+    .CARD{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .CARD-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+/* releated product */
+.Products-ctn {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.Products-ctn h3 {
+    font-weight: 600;
+    padding: 18px;
+    color: #15161D;
+}
+
+/* Cards */
+.Card {
+    flex-direction: column;
+    width: 260px;
+    outline: 1px solid #53565c;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    transition: 0.08s ease;
+    box-shadow: 0 0 5px #1e1e1e;
+    position: relative;
+}
+
+.Card:hover {
+    outline: 2px solid #59c734;
+}
+
+.Card .CardImg-ctn {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Card .CardImg {
+    width: 100%;
+    height: auto;
+}
+
+.TitleCard {
+    color: #15161D;
+    text-decoration: none;
+    align-self: center;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TitleCard:hover,
+.Card .item-ctn i:hover {
+    color: #6ad048;
+    transition: ease-in 0.2s;
+    border-radius: 30%;
+}
+
+.Card .item-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+
+.Card .item-ctn .frstprx {
+    color: #59c734;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 8px;
+}
+
+.Card .item-ctn .scndprx {
+    color: #8D99AE;
+    text-decoration: line-through;
+}
+
+.Card .item-ctn .fa-heart {
+    margin: 8px;
+}
+
+.Card .item-ctn button {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #6ad048;
+    border: 1px solid #6ad048;
+    padding: 7px;
+    margin: 8px;
+    color: #FFF;
+    border-radius: 15px;
+    transition: 0.3s ease all;
+}
+
+.Card .item-ctn button:hover {
+    color: #59c734;
+    background-color: #FFF;
+
+}
+
+.Card .Discount {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    color: #FFF;
+    background-color: #6ad048;
+    height: 25px;
+    right: 14px;
+    top: 14px;
+}
+
+/* ------------------------------------------- */

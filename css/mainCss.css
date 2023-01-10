@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 30px 10px;
+}
+
+main .main-ctn {
+    max-width: 1080px;
+    margin: auto;
+}
+
+/* Cards */
+.Card {
+    flex-direction: column;
+    width: 260px;
+    outline: 1px solid #53565c;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    transition: 0.08s ease;
+    box-shadow: 0 1px 5px #1e1e1e;
+    position: relative;
+}
+
+.Card:hover {
+    outline: 2px solid #59c734;
+}
+
+.Card .CardImg-ctn {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Card .CardImg {
+    width: 100%;
+    height: auto;
+}
+
+.TitleCard {
+    color: #15161D;
+    text-decoration: none;
+    align-self: center;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TitleCard:hover,
+.Card .item-ctn i:hover {
+    color: #6ad048;
+    transition: ease-in 0.2s;
+    border-radius: 30%;
+}
+
+.Card .item-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+
+.Card .item-ctn .frstprx {
+    color: #59c734;
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 8px;
+}
+
+.Card .item-ctn .scndprx {
+    color: #8D99AE;
+    text-decoration: line-through;
+}
+
+.Card .item-ctn .fa-heart {
+    margin: 8px;
+}
+
+.Card .item-ctn button {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #6ad048;
+    border: 1px solid #6ad048;
+    padding: 7px;
+    margin: 8px;
+    color: #FFF;
+    border-radius: 15px;
+    transition: 0.3s ease all;
+}
+
+.Card .item-ctn button:hover {
+    color: #59c734;
+    background-color: #FFF;
+
+}
+
+.Card .Discount {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    color: #FFF;
+    background-color: #6ad048;
+    height: 25px;
+    right: 14px;
+    top: 14px;
+}
+
+/* ------------------------------------------- */
+
+.Build-pc,
+.Build-pc * {
+    transition: 0.3s ease all;
+}
+
+.Build-pc {
+    margin: auto;
+    max-width: 1080px;
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/pcbiuld.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 20px;
+    flex-direction: column;
+    box-shadow: 0 1px 5px #1e1e1e;
+
+}
+
+.Build-pc:hover {
+    background-size: 105% auto;
+}
+
+.Build-pc .bg-cl {
+    background-color: #6ad048;
+    opacity: 0.9;
+    width: 80%;
+    height: 100%;
+    transform: skewX(-45deg) translateX(-50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Build-pc:hover .bg-cl {
+    width: 85%;
+}
+
+.Build-pc p {
+    color: #FFF;
+    font-size: 35px;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.Build-pc .buildNow {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.Build-pc:hover p {
+    font-size: 38px;
+}
+
+.Build-pc:hover .buildNow {
+    font-size: 20px;
+
+}
+
+@media only screen and (max-width: 763px) {
+    .Build-pc {
+        background-color: #6ad048;
+    }
+
+    .Build-pc .bg-cl {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .Build-pc {
+        background-image: none;
+    }
+
+    .Build-pc p {
+        font-size: 8vw;
+    }
+
+    .Build-pc:hover p {
+        font-size: 8vw;
+    }
+}
+
+.Products-ctn {
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.Products-ctn h3 {
+    font-weight: 600;
+    padding: 18px;
+    color: #15161D;
+}
+
+.prdca{
+    max-width: 1080px;
+    margin: auto;
+}
